@@ -1,0 +1,16 @@
+---
+
+- name: installing and starting a package
+  hosts: localhost
+  
+  tasks:
+  - name: installing apache
+    yum:
+       name: httpd
+       state: present
+
+  - name: start httpd
+    service:
+       name: httpd
+       state: started
+

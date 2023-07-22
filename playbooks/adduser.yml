@@ -1,0 +1,13 @@
+---
+
+- name: creating user on remote client 
+  hosts: all 
+
+  tasks: 
+  - name: create user 
+    user:
+     name: george 
+     home: /home/george
+     shell: /bin/bash
+
+     
