@@ -1,0 +1,12 @@
+---
+
+- name: changing file perm
+  hosts: all
+
+  tasks:
+  - name: change file permission 
+    file:
+      path: /home/uchoudhary/linux2
+      mode: a+w
+
+

@@ -1,0 +1,10 @@
+--- 
+
+- name: changing file perm on remote client
+  hosts: all
+
+  tasks: 
+  - name: change file perm
+    file: 
+      path: /home/uchoudhary/linux1
+      mode: 0777

@@ -1,0 +1,21 @@
+---
+
+- name: download tomcat from tomcat.apache.org 
+  hosts: localhost
+  
+  tasks:
+  - name: create a directory /opt/tomcat
+    file: 
+     path: /opt/tomcat
+     state: directory 
+     mode: 0755
+     owner: root 
+     group: root
+   
+  - name: download tomcat from get_url
+    get_url:
+     url: 
+     dest: /opt/tomcat
+     mode: 0755
+     owner: uchoudhary
+     group: uchoudhary

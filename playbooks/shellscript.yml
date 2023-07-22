@@ -1,0 +1,10 @@
+---
+
+- name: playbook for shell script
+  hosts: all
+  become: true
+  become_user: root
+
+  tasks:
+  - name: run shell script 
+    shell: "/home/uchoudhary/cfile.sh"

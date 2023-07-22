@@ -1,0 +1,11 @@
+---
+
+- name: copying file from local to remote client  
+  hosts: all
+
+  tasks: 
+  - name: 
+    copy:
+      src: /home/uchoudhary/some.cfg
+      dest: /tmp
+      
