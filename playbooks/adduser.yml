@@ -1,6 +1,6 @@
 ---
 
-- name: creating user on remote client 
+- name: creating user on remote clientt
   hosts: all 
 
   tasks: 
